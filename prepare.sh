@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo mv ./lein /bin/lein
+sudo cp ./lein /bin/lein
 
 ln -s ../../deck36-php-web-app/app/config/ resources/config
 ln -s ../../deck36-php-web-app/ resources/deck36-php-web-app
