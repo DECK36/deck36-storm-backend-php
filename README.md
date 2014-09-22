@@ -76,13 +76,21 @@ Deploying to a cluster is very simple as well, because all the cluster config is
 	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.HighFiveBadgeTopology prod
 
 
-### Deploy all the PHP-based topologies to enjoy the full Plan9 gaming experience
+### Deploy all the PHP-based StatusLevel bolt
+
+Plan9 uses a PHP bolt to calculate points and award status level badges. Deploy the bolt for the Plan9 gaming experience:
+
+	# Status level and points calculation
+	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.StatusLevelTopology prod
+
+
+
+### Deploy further development topologies
+
+Plan9 includes more PHP-based bolts and respective topologies to give more examples and to extend the gaming experience even further. 
 
 	# Note: Maybe you deployed the HighFive badge already if you executed the command above
 	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.HighFiveBadgeTopology prod
-
-	# PrimeCat badge
-	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.PrimeCatBadgeTopology prod
 
 	# Raider of the Kitten Robbers
 	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.RaiderOfTheKittenRobbersTopology prod
@@ -93,7 +101,6 @@ Deploying to a cluster is very simple as well, because all the cluster config is
 	# StumbleBlunder badge
 	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.StumbleBlunderBadgeTopology prod
 
-	# Status level and points calculation
-	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.StatusLevelTopology prod
-
+	# PrimeCat badge
+	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.PrimeCatBadgeTopology prod
 
