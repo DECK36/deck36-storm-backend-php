@@ -76,7 +76,7 @@ Deploying to a cluster is very simple as well, because all the cluster config is
 	/opt/storm/bin/storm jar target/deck36-storm-backend-php-0.0.1-SNAPSHOT-standalone.jar deck36.storm.plan9.php.HighFiveBadgeTopology prod
 
 
-### Deploy all the PHP-based StatusLevel bolt
+### Deploy the PHP-based StatusLevel bolt
 
 Plan9 uses a PHP bolt to calculate points and award status level badges. Deploy the bolt for the Plan9 gaming experience:
 
