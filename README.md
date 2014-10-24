@@ -27,7 +27,7 @@ Set correct maven repository directory in IDEA .iml file. We provide the "patch_
 ./patch_local_m2_dir.sh
 ```
 
-Start up Intellij and open the deck36-storm-backend-nodejs.ipr project file. Enter File->Project Structure and choose your JDK. A JDK version of 1.7+ is required. Increase the language level to at least 7.0.
+Start up Intellij and open the deck36-storm-backend-php.ipr project file. Enter File->Project Structure and choose your JDK. A JDK version of 1.7+ is required. Increase the language level to at least 7.0.
 
 ![IDEA SDK Settings](idea_sdk_settings.png)
 
