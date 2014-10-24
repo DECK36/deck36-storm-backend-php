@@ -18,7 +18,7 @@
 
 The instructions provided here work with Intellij 13 Community Edition. IDE's other than Intellij are not supported at the moment. If you use an other IDE create a setup procedure, we appreciate your pull request. 
 
-In your local machine (not within the vagrant), go to the "deck36-storm-backend-nodejs" project. The `./prepare.sh` script we executed within the vagrant already created IDEA project files. However, they lack local configuration for the maven repository, JDK/language settings, and project structure.
+In your local machine (not within the vagrant), go to the "deck36-storm-backend-php" project. The `./prepare.sh` script we executed within the vagrant already created IDEA project files. However, they lack local configuration for the maven repository, JDK/language settings, and project structure.
 
 Set correct maven repository directory in IDEA .iml file. We provide the "patch_local_m2_dir.sh" script to automatically update the iml file. In the background, the vagrant mounts a local directory as its maven repository dir, so we have access to it.
 
